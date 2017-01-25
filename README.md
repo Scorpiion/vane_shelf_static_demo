@@ -1,14 +1,26 @@
 # vane + shelf_static demo 
 
-## Start server 
+## Access the app from Dartium
 
-From the root of the git repo, run this:
+Start server:
 
     dart bin/server.dart
 
-The server will now start on port 7777 on localhost.
-
-## Access the app
-
 Open <a href="http://localhost:7777" target="_blank">http://localhost:7777/</a>
+
+## Access the app from Chrome or other browsers 
+
+Build client app:
+
+    pub build 
+    
+Start server:
+
+    dart bin/server.dart --static build/web
+    
+## Note on sourcevoid.yaml file
+
+This sample includes a sourcevoid.yaml file and can be deploy directly to Sourcevoid without changes. Sourcevoid will
+build the app as stated by the "build:" section and then run the start command pointing to the build/web directory  
+for static files.
 

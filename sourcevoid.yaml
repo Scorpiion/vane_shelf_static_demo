@@ -5,5 +5,5 @@ build:
   - pub get
   - pub build
 
-start: dart bin/server.dart
+start: dart bin/server.dart --static build/web
 
