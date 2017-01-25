@@ -1,0 +1,5 @@
+# As we don't use vane's proxy this file is not really needed
+# but we keep it here with an empty "client:" setting to avoid
+# the warning message about no dv.yaml being present.
+client:
+
